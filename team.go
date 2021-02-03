@@ -80,7 +80,7 @@ func (c *Client) Team(id int64) (*Team, error) {
 // email arg is an optional value.
 // If you don't want to set email, please set "" (empty string).
 // When team creation is successful, returns the team ID.
-func (c *Client) AddTeam(name string, email strin, orgId int64) (int64, error) {
+func (c *Client) AddTeam(name string, email string, orgId int64) (int64, error) {
 	id := int64(0)
 	path := "/api/teams"
 	team := Team{
